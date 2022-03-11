@@ -1,0 +1,36 @@
+version: '3'
+services:
+  database:
+    container_name: database
+    image: mongo
+    ports:
+      - 27017:27017
+    volumes:
+      - mongodb:/data/db
+  backend:
+    container_name: backend
+    restart: always
+    build:
+      dockerfile: ./Dockerfile
+    ports:
+      - 8080:8080
+    external_links:
+      - mongo
+    links:  
+      - mongo
+    volumes:
+      - ./backend:/code
+  frontend:
+    container_name: frontend
+    build:
+      dockerfile: ./Dockerfile-Frontend
+    ports:
+      - 3000:3000
+    external_links:
+      - backend
+    links:  
+      - backend
+    volumes:
+      - ./frontend:/code   
+volumes:
+ mongodb:

@@ -1,0 +1,26 @@
+export const strings = {
+  loremIpsum: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris feugiat ullamcorper.",
+  TextLoremIpsum: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora tenetur doloremque deleniti iusto expedita nulla maiores in.",
+  userIncorrect: "E-mail e/ou senha incorretos",
+  isRequired: "Campo obrigatório",
+  isRequiredOneOption: "É obrigatório selecionar ao menos uma opção",
+  maxAmountAllowed: "Valor máximo permitido é: R$ 999.999.999,99",
+  maxPercentageAllowed: "Valor máximo permitido é: 100%",
+  confirmationWordToDelete: "Apagar",
+  mask: {
+    fipe: "999999-9",
+    cnpj: "99.999.999/9999-99",
+    cpf: "999.999.999-99",
+    cep: "99.999-999",
+    phone: "(99) 99999-9999",
+    mobileNumber: "(99) 99999-9999",
+    phoneNumber: "(99) 9999-9999",
+    phoneWithCountryCode: "+99 (99) 99999-9999",
+    cnae: "****-*/**",
+  },
+  status: {
+    error: "Infelizmente, não é possível executar esta ação. Entre em contato com o administrador para obter ajuda.",
+    emptyData: "Nenhum dado foi encontrado.",
+    loadingError: "Não foi possível carregar as informações.",
+  },
+};
